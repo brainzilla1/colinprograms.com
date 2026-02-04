@@ -1,48 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="txjKm53JBE8uCEl_b6EiVthaL2rXyngB1W2MQ08ZSgM" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colin Programs | Android App Development</title>
+    <title>Colin Programs | Premium Android Apps</title>
+    <!-- Keep your Google Verification tag below if you have it -->
+    <meta name="google-site-verification" content="YOUR_CODE_HERE" />
+    
     <style>
-        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
-        header { border-bottom: 2px solid #007bff; padding-bottom: 20px; margin-bottom: 30px; }
-        h1 { color: #007bff; }
-        .footer { margin-top: 50px; font-size: 0.8em; color: #777; }
-        .nav a { margin-right: 15px; text-decoration: none; color: #007bff; font-weight: bold; }
+        /* General Styles */
+        body { 
+            background-color: #000000; 
+            color: #cccccc; /* Grey body text */
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header and Links */
+        header {
+            border-bottom: 1px solid #333;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        h1, h2 {
+            color: #ff0011; /* Your specific Red */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #ff0011; /* Red Links */
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: opacity 0.2s;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        /* App Section */
+        .app-card {
+            border: 1px solid #222;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .app-name {
+            color: #ff0011;
+            font-size: 1.3em;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Colin LLC</h1>
-        <nav class="nav">
+        <h1>Colin Programs LLC</h1>
+        <nav>
             <a href="#about">About</a>
             <a href="#apps">Apps</a>
-            <a href="/privacy-policy.html">Privacy Policy</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
         </nav>
     </header>
 
     <section id="about">
-        <h2>About Us</h2>
-        <p>Based in Utah, we specialize in high-quality Android applications designed for utility and ease of use.</p>
+        <h2>About</h2>
+        <p>Based in Utah, Colin Programs LLC is dedicated to building high-quality, professional Android utilities. We believe in a premium user experience: one-time purchases, no intrusive ads, and no recurring subscriptions.</p>
     </section>
 
     <section id="apps">
         <h2>Our Apps</h2>
-        <p>Stay tuned! Our latest app is currently undergoing review on the Google Play Store.</p>
+        
+        <div class="app-card">
+            <span class="app-name">Timer Thing</span>
+            <p>A professional, precision timer designed for focus and utility. Zero data collection and total privacy.</p>
+        </div>
+
+        <div class="app-card">
+            <span class="app-name">Bowling Tracker</span>
+            <p>Track your games, analyze your scores, and improve your performance on the lanes.</p>
+        </div>
     </section>
 
     <div class="footer">
-        <p>&copy; 2025 Colin LLC. All rights reserved.</p>
-        <p>Contact: colin@colinprograms.com</p>
-    </div>
+        <p>&copy; 2026 Colin Programs LLC. All rights reserved.</p>
+        <p>Contact: support@colinprograms.com</p>
+    </section>
 
 </body>
-
-</html> 
-
-
-
-
+</html>
