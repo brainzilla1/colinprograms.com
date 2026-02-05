@@ -38,10 +38,9 @@
             font-size: 1.1em;
         }
 
-        /* NEW: Flexbox layout for the app cards */
         .app-card {
             display: flex;
-            align-items: center; /* Vertically centers icon with text */
+            align-items: center;
             border: 1px solid #222;
             padding: 20px;
             border-radius: 12px;
@@ -49,13 +48,12 @@
             background-color: #050505;
         }
 
-        /* NEW: Icon styling */
         .app-icon {
-            width: 80px;      /* Resizes your 512px icon to 80px */
+            width: 80px;
             height: 80px;
-            border-radius: 18px; /* Gives it that nice mobile app look */
-            margin-right: 20px;  /* Space between icon and text */
-            flex-shrink: 0;      /* Prevents the icon from squishing on small screens */
+            border-radius: 18px;
+            margin-right: 20px;
+            flex-shrink: 0;
         }
 
         .app-details {
@@ -120,6 +118,16 @@
                 <p class="app-description">Track your games, analyze your scores, and improve your performance on the lanes.</p>
             </div>
         </div>
+
+        <!-- App 3 -->
+        <div class="app-card">
+            <img src="sb-icon.png" alt="Scorebored Icon" class="app-icon">
+            <div class="app-details">
+                <span class="app-name">Scorebored</span>
+                <p class="app-description">A professional scoring utility for your favorite games. Clean interface, no ads, and no subscriptions.</p>
+            </div>
+        </div>
+
     </section>
 
     <div class="footer">
