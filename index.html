@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colin Programs | Premium Android Apps</title>
-    <!-- Keep your Google Verification tag below if you have it -->
-    <meta name="google-site-verification" content="YOUR_CODE_HERE" />
-    
     <style>
         body { 
             background-color: #000000; 
@@ -48,24 +45,43 @@
             background-color: #050505;
         }
 
+        /* Hover effect to show items are clickable */
+        .app-card:hover {
+            border-color: #444;
+        }
+
         .app-icon {
             width: 80px;
             height: 80px;
             border-radius: 18px;
             margin-right: 20px;
             flex-shrink: 0;
+            transition: transform 0.2s;
+        }
+
+        .app-icon:hover {
+            transform: scale(1.05);
         }
 
         .app-details {
             flex-grow: 1;
         }
 
-        .app-name {
+        /* Styling for the new links */
+        .app-link {
+            text-decoration: none;
             color: #ff0011;
+        }
+
+        .app-name {
             font-size: 1.4em;
             font-weight: bold;
             margin: 0;
             display: block;
+        }
+
+        .app-name:hover {
+            text-decoration: underline;
         }
 
         .app-description {
@@ -99,41 +115,57 @@
     </section>
 
     <section id="apps">
-        <h2>Apps</h2>
+        <h2>Our Apps</h2>
         
-        <!-- App 1 -->
+        <!-- Timer Thing -->
         <div class="app-card">
-            <img src="timer-icon.png" alt="Timer Thing Icon" class="app-icon">
+            <a href="https://play.google.com/store/apps/details?id=com.colinprograms.timerthing" target="_blank">
+                <img src="timer-icon.png" alt="Timer Thing Icon" class="app-icon">
+            </a>
             <div class="app-details">
-                <span class="app-name">Timer Thing</span>
+                <a href="https://play.google.com/store/apps/details?id=com.colinprograms.timerthing" target="_blank" class="app-link">
+                    <span class="app-name">Timer Thing</span>
+                </a>
                 <p class="app-description">A professional, precision timer designed for focus and utility. Zero data collection and total privacy.</p>
             </div>
         </div>
 
-        <!-- App 2 -->
+        <!-- Bowling Tracker -->
         <div class="app-card">
-            <img src="bowling-icon.png" alt="Bowling Tracker Icon" class="app-icon">
+            <a href="https://play.google.com/store/apps/details?id=com.colinprograms.bowlingtracker" target="_blank">
+                <img src="bowling-icon.png" alt="Bowling Tracker Icon" class="app-icon">
+            </a>
             <div class="app-details">
-                <span class="app-name">Bowling Tracker</span>
+                <a href="https://play.google.com/store/apps/details?id=com.colinprograms.bowlingtracker" target="_blank" class="app-link">
+                    <span class="app-name">Bowling Tracker</span>
+                </a>
                 <p class="app-description">Track your games, analyze your scores, and improve your performance on the lanes.</p>
             </div>
         </div>
 
-        <!-- App 3 -->
+        <!-- Scorebored -->
         <div class="app-card">
-            <img src="sb-icon.png" alt="Scorebored Icon" class="app-icon">
+            <a href="https://play.google.com/store/apps/details?id=com.colinprograms.scorebored" target="_blank">
+                <img src="sb-icon.png" alt="Scorebored Icon" class="app-icon">
+            </a>
             <div class="app-details">
-                <span class="app-name">Scorebored</span>
+                <a href="https://play.google.com/store/apps/details?id=com.colinprograms.scorebored" target="_blank" class="app-link">
+                    <span class="app-name">Scorebored</span>
+                </a>
                 <p class="app-description">A professional scoring utility for your favorite games. Clean interface, no ads, and no subscriptions.</p>
             </div>
         </div>
 
-        <!-- App 4 -->
+        <!-- Todo -->
         <div class="app-card">
-            <img src="td-icon.png" alt="Todo Icon" class="app-icon">
+            <a href="https://play.google.com/store/apps/details?id=com.colinprograms.todo" target="_blank">
+                <img src="td-icon.png" alt="Todo Icon" class="app-icon">
+            </a>
             <div class="app-details">
-                <span class="app-name">Todo</span>
-                <p class="app-description">A premium note editor and manager for keeping your thoughts organized. Local storage for maximum privacy.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.colinprograms.todo" target="_blank" class="app-link">
+                    <span class="app-name">Todo</span>
+                </a>
+                <p class="app-description">A professional note editor and manager for keeping your thoughts organized. Local storage for maximum privacy.</p>
             </div>
         </div>
 
@@ -146,4 +178,3 @@
 
 </body>
 </html>
-
