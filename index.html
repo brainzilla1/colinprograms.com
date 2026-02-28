@@ -35,19 +35,22 @@
             font-size: 1.1em;
         }
 
+        /* UPDATED: App card styling for more depth */
         .app-card {
             display: flex;
             align-items: center;
-            border: 1px solid #222;
+            border: 1px solid #333; /* Slightly lighter border */
             padding: 20px;
             border-radius: 12px;
             margin-bottom: 20px;
-            background-color: #050505;
+            background-color: #1a1a1a; /* Dark grey for depth */
+            transition: background-color 0.3s ease, border-color 0.3s ease;
         }
 
-        /* Hover effect to show items are clickable */
+        /* Hover effect: Lightens the grey slightly and turns border red */
         .app-card:hover {
-            border-color: #444;
+            background-color: #222222;
+            border-color: #ff0011;
         }
 
         .app-icon {
@@ -67,7 +70,6 @@
             flex-grow: 1;
         }
 
-        /* Styling for the new links */
         .app-link {
             text-decoration: none;
             color: #ff0011;
@@ -178,5 +180,3 @@
 
 </body>
 </html>
-
-
