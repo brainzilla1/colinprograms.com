@@ -35,19 +35,17 @@
             font-size: 1.1em;
         }
 
-        /* UPDATED: App card styling for more depth */
         .app-card {
             display: flex;
             align-items: center;
-            border: 1px solid #333; /* Slightly lighter border */
+            border: 1px solid #333;
             padding: 20px;
             border-radius: 12px;
             margin-bottom: 20px;
-            background-color: #1a1a1a; /* Dark grey for depth */
+            background-color: #1a1a1a;
             transition: background-color 0.3s ease, border-color 0.3s ease;
         }
 
-        /* Hover effect: Lightens the grey slightly and turns border red */
         .app-card:hover {
             background-color: #222222;
             border-color: #ff0011;
@@ -89,6 +87,15 @@
         .app-description {
             margin: 5px 0 0 0;
             color: #aaaaaa;
+        }
+
+        /* NEW: Styling for the indented update notes */
+        .app-update {
+            display: block;      /* Forces it to the next line */
+            margin-left: 20px;   /* Indentation */
+            margin-top: 5px;     /* Slight space above the dash */
+            font-size: 0.9em;    /* Slightly smaller font */
+            color: #888888;      /* Dimmer grey color */
         }
 
         .footer {
@@ -141,9 +148,8 @@
                 <a href="https://play.google.com/store/apps/details?id=com.colinprograms.bowlingtracker" target="_blank" class="app-link">
                     <span class="app-name">Bowling Tracker</span>
                 </a>
-                <p class="app-description">League and practice bowling application for tracking performance. More advanced metrics coming.
-                    
-                    -Frame-by-frame scoring added (3/2026)</p>
+                <p class="app-description">League and practice bowling application for tracking performance. More advanced metrics coming.</p>
+                <span class="app-update">- Frame-by-frame scoring added (3/2026)</span>
             </div>
         </div>
 
@@ -169,9 +175,8 @@
                 <a href="https://play.google.com/store/apps/details?id=com.colinprograms.todo" target="_blank" class="app-link">
                     <span class="app-name">Todo</span>
                 </a>
-                <p class="app-description">List-making editor and manager built to last forever.
-                    
-                    -Rich text formatting added, import/export improved (2/2026)</p>
+                <p class="app-description">List-making editor and manager built to last forever.</p>
+                <span class="app-update">- Rich text formatting added, import/export improved (2/2026)</span>
             </div>
         </div>
 
@@ -184,7 +189,3 @@
 
 </body>
 </html>
-
-
-
-
