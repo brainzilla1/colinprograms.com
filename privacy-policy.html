@@ -8,7 +8,7 @@
         /* General Styles */
         body { 
             background-color: #000000; 
-            color: #cccccc; /* Grey body text */
+            color: #cccccc; 
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             max-width: 900px;
@@ -16,33 +16,37 @@
             padding: 40px 20px;
         }
 
-        /* Header and Links */
         header {
-            border-bottom: 1px solid #333;
+            border-bottom: 2px solid #ff0011;
             padding-bottom: 20px;
             margin-bottom: 40px;
         }
 
-        h1, h2 {
-            color: #ff0011; /* Your specific Red */
+        h1, h2, h3 {
+            color: #ff0011; 
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
+        h2 { margin-top: 50px; border-bottom: 1px solid #222; padding-bottom: 10px; }
+        h3 { margin-top: 30px; font-size: 1.1em; }
+
         nav a {
-            color: #ff0011; /* Red Links */
+            color: #ff0011; 
             text-decoration: none;
             margin-right: 20px;
             font-weight: bold;
             font-size: 1.1em;
-            transition: opacity 0.2s;
         }
 
-        nav a:hover {
-            opacity: 0.7;
+        .highlight-box {
+            border: 1px solid #333;
+            padding: 20px;
+            background-color: #0d0d0d;
+            border-radius: 8px;
+            margin: 20px 0;
         }
 
-        /* Footer */
         .footer {
             margin-top: 60px;
             padding-top: 20px;
@@ -50,6 +54,9 @@
             font-size: 0.9em;
             color: #666;
         }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
     </style>
 </head>
 <body>
@@ -61,26 +68,59 @@
     </header>
 
     <h1>Privacy Policy</h1>
-    <p><strong>Last Updated:</strong> January 1, 2026</p>
+    <p><strong>Last Updated:</strong> February 2025</p>
 
-    <p>Colin Programs LLC ("we," "us," or "our") operates the mobile application(s) published under our developer account. We value your privacy and are committed to protecting it.</p>
+    <p>Colin Programs LLC ("we," "us," or "our") operates several mobile applications published under our developer account. We value your privacy and are committed to protecting it through transparent data practices.</p>
 
-    <h2>1. Data Collection</h2>
-    <p><strong>We do not collect any personal information.</strong> Our apps do not require user registration (emails), do not access your device's camera or microphone, and do not track your location.</p>
+    <!-- SECTION 1: GENERAL ZERO-DATA APPS -->
+    <h2>1. General Policy (Utility Apps)</h2>
+    <p>The following applications are designed as <strong>Zero-Data</strong> utilities:</p>
+    <ul>
+        <li>Bowling Tracker</li>
+        <li>Scorebored</li>
+        <li>Oraculum Deseret</li>
+        <li>Todo</li>
+        <li>Timer Fren</li>
+    </ul>
+    <div class="highlight-box">
+        <p><strong>For these apps, we do not collect, share, or store any personal information.</strong> They do not require user registration, do not access your device's camera or microphone, and do not track your location. All user-generated data (such as notes or scores) is stored locally on your device and is not accessible by us.</p>
+    </div>
 
-    <h2>2. Telemetry and Analytics</h2>
-    <p>Our apps do not contain any telemetry or analytics software. We do not track how you use the app, and no data regarding your usage is sent to our servers or any third-party services.</p>
+    <!-- SECTION 2: PATHMAKER SPECIFIC POLICY -->
+    <h2>2. Specific Policy for Pathmaker</h2>
+    <p>Pathmaker is designed as a vehicle trip computer and speedometer. To provide its core features, Pathmaker requires different permissions than our standard utility apps.</p>
 
-    <h2>3. Third-Party Access</h2>
-    <p>Since we do not collect any data, we do not share, sell, or trade any user information with third parties. There are no advertisements or third-party SDKs in our apps that collect data for profiling or tracking purposes.</p>
+    <h3>Information Collection and Use</h3>
+    <p>To provide accurate tracking, Pathmaker accesses and collects the following data:</p>
+    <ul>
+        <li><strong>Location Data (Precise and Approximate):</strong> Pathmaker accesses your device's GPS and network location data. This occurs while the app is in use and while tracking trips via an active foreground service.</li>
+        <li><strong>Usage:</strong> Location data is used strictly to calculate real-time speed, trip distance, average/maximum speeds, and to plot breadcrumb routes on the map.</li>
+    </ul>
 
-    <h2>4. Children's Privacy</h2>
+    <h3>Data Storage and Sharing</h3>
+    <ul>
+        <li><strong>On-Device Processing:</strong> Your location points, vehicle profiles, and trip statistics are stored locally on your device. We do not transmit this data to our own servers.</li>
+        <li><strong>No Third-Party Sale:</strong> We do not sell, rent, trade, or share your location data with advertisers, data brokers, or marketing partners.</li>
+        <li><strong>Third-Party Services:</strong> Pathmaker utilizes the Google Maps SDK for Android. Google's use of information collected through this service is governed by the Google Privacy Policy at <a href="https://policies.google.com/privacy" style="color:#ff0011;">https://policies.google.com/privacy</a>.</li>
+    </ul>
+
+    <h3>Background and Foreground Service</h3>
+    <p>Location tracking only occurs when you explicitly initiate a trip (by tapping "START") and continues until you stop the trip. While active, a persistent notification is displayed in your status bar to indicate that tracking is in progress.</p>
+
+    <h3>Data Retention and Deletion</h3>
+    <p>All trip statistics and vehicle data remain on your device and can be modified or cleared by deleting vehicles within the app or uninstalling the application.</p>
+
+    <!-- SECTION 3: COMMON PROVISIONS -->
+    <h2>3. Children's Privacy</h2>
     <p>Our applications do not collect any personal information from anyone, including children under the age of 13. We comply with the Children's Online Privacy Protection Act (COPPA).</p>
 
-    <h2>5. Contact Us</h2>
+    <h2>4. Contact Us</h2>
     <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-    <p>Email: colin@colinprograms.com<br>
-    Address: 7533 S Center View CT STE R, West Jordan, UT, 84084, USA</p>
+    <p>
+        <strong>Colin Programs LLC</strong><br>
+        Email: colin@colinprograms.com<br>
+        Address: 7533 S Center View CT STE R, West Jordan, UT, 84084, USA
+    </p>
 
     <div class="footer">
         &copy; 2026 Colin Programs LLC. All rights reserved.
